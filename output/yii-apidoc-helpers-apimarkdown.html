@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/9e9499b6/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/1374a5fc/solarized_light.css" rel="stylesheet">
+<link href="./assets/1fb4caa7/style.css" rel="stylesheet">
+<script src="./assets/9568987e/jquery.js"></script>
+<script src="./assets/9e9499b6/js/bootstrap.js"></script>
+<script src="./assets/6746678/jssearch.js"></script>    <title>ApiMarkdown, yii\apidoc\helpers\ApiMarkdown - Yii Framework 2.0 API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w45" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w45-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w45-collapse" class="collapse navbar-collapse"><ul id="w46" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <b class="caret"></b></a><ul id="w47" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-codeception-index.html" tabindex="-1">codeception</a></li>
+<li><a href="./ext-composer-index.html" tabindex="-1">composer</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li></ul></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-36" data-toggle="collapse" data-parent="#navigation">yii\apidoc\commands <b class="caret"></b></a><div id="navigation-36" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-commands-apicontroller.html">ApiController</a>
+<a class="list-group-item" href="./yii-apidoc-commands-guidecontroller.html">GuideController</a></div>
+<a class="list-group-item" href="#navigation-37" data-toggle="collapse" data-parent="#navigation">yii\apidoc\components <b class="caret"></b></a><div id="navigation-37" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-components-basecontroller.html">BaseController</a></div>
+<a class="list-group-item active" href="#navigation-38" data-toggle="collapse" data-parent="#navigation">yii\apidoc\helpers <b class="caret"></b></a><div id="navigation-38" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./yii-apidoc-helpers-apimarkdown.html">ApiMarkdown</a>
+<a class="list-group-item" href="./yii-apidoc-helpers-prettyprinter.html">PrettyPrinter</a></div>
+<a class="list-group-item" href="#navigation-39" data-toggle="collapse" data-parent="#navigation">yii\apidoc\models <b class="caret"></b></a><div id="navigation-39" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-models-basedoc.html">BaseDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-classdoc.html">ClassDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-constdoc.html">ConstDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-context.html">Context</a>
+<a class="list-group-item" href="./yii-apidoc-models-eventdoc.html">EventDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-functiondoc.html">FunctionDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-interfacedoc.html">InterfaceDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-methoddoc.html">MethodDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-paramdoc.html">ParamDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-propertydoc.html">PropertyDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-traitdoc.html">TraitDoc</a>
+<a class="list-group-item" href="./yii-apidoc-models-typedoc.html">TypeDoc</a></div>
+<a class="list-group-item" href="#navigation-40" data-toggle="collapse" data-parent="#navigation">yii\apidoc\renderers <b class="caret"></b></a><div id="navigation-40" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-renderers-apirenderer.html">ApiRenderer</a>
+<a class="list-group-item" href="./yii-apidoc-renderers-baserenderer.html">BaseRenderer</a>
+<a class="list-group-item" href="./yii-apidoc-renderers-guiderenderer.html">GuideRenderer</a></div>
+<a class="list-group-item" href="#navigation-41" data-toggle="collapse" data-parent="#navigation">yii\apidoc\templates\bootstrap <b class="caret"></b></a><div id="navigation-41" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-templates-bootstrap-apirenderer.html">ApiRenderer</a>
+<a class="list-group-item" href="./yii-apidoc-templates-bootstrap-guiderenderer.html">GuideRenderer</a>
+<a class="list-group-item" href="./yii-apidoc-templates-bootstrap-renderertrait.html">RendererTrait</a>
+<a class="list-group-item" href="./yii-apidoc-templates-bootstrap-sidenavwidget.html">SideNavWidget</a></div>
+<a class="list-group-item" href="#navigation-42" data-toggle="collapse" data-parent="#navigation">yii\apidoc\templates\bootstrap\assets <b class="caret"></b></a><div id="navigation-42" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-templates-bootstrap-assets-assetbundle.html">AssetBundle</a></div>
+<a class="list-group-item" href="#navigation-43" data-toggle="collapse" data-parent="#navigation">yii\apidoc\templates\html <b class="caret"></b></a><div id="navigation-43" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-templates-html-apirenderer.html">ApiRenderer</a>
+<a class="list-group-item" href="./yii-apidoc-templates-html-guiderenderer.html">GuideRenderer</a></div>
+<a class="list-group-item" href="#navigation-44" data-toggle="collapse" data-parent="#navigation">yii\apidoc\templates\online <b class="caret"></b></a><div id="navigation-44" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-templates-online-apirenderer.html">ApiRenderer</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class yii\apidoc\helpers\ApiMarkdown</h1>
+<div class="top-nav">
+    <a href="index.html">All Classes</a>
+            | <a href="#properties">Properties</a>
+                | <a href="#methods">Methods</a>
+            </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+            <tr><th>Inheritance</th><td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a> &raquo;
+<a href="cebe-markdown-githubmarkdown.html">cebe\markdown\GithubMarkdown</a> &raquo;
+<a href="cebe-markdown-markdown.html">cebe\markdown\Markdown</a> &raquo;
+<a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td></tr>
+                        <tr><th>Uses Traits</th><td><a href="cebe-markdown-block-codetrait.html">cebe\markdown\block\CodeTrait</a>, <a href="cebe-markdown-block-fencedcodetrait.html">cebe\markdown\block\FencedCodeTrait</a>, <a href="cebe-markdown-block-headlinetrait.html">cebe\markdown\block\HeadlineTrait</a>, <a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a>, <a href="cebe-markdown-block-listtrait.html">cebe\markdown\block\ListTrait</a>, <a href="cebe-markdown-block-quotetrait.html">cebe\markdown\block\QuoteTrait</a>, <a href="cebe-markdown-block-ruletrait.html">cebe\markdown\block\RuleTrait</a>, <a href="cebe-markdown-block-tabletrait.html">cebe\markdown\block\TableTrait</a>, <a href="cebe-markdown-inline-codetrait.html">cebe\markdown\inline\CodeTrait</a>, <a href="cebe-markdown-inline-emphstrongtrait.html">cebe\markdown\inline\EmphStrongTrait</a>, <a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a>, <a href="cebe-markdown-inline-strikeouttrait.html">cebe\markdown\inline\StrikeoutTrait</a>, <a href="cebe-markdown-inline-urllinktrait.html">cebe\markdown\inline\UrlLinkTrait</a></td></tr>
+                            <tr><th>Available since version</th><td>2.0</td></tr>
+                    <tr>
+          <th>Source Code</th>
+          <td><a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php">https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php</a></td>
+        </tr>
+    </table>
+
+<div class="class-description">
+    <p><strong>A Markdown helper with support for class reference links.</strong></p>
+    
+    </div>
+
+<a id="properties"></a>
+
+<div class="summary doc-property">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+            <tr class="inherited" id="$enableNewlines">
+        <td><a href="cebe-markdown-githubmarkdown.html#$enableNewlines-detail">$enableNewlines</a></td>
+        <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+        <td>Whether to interpret newlines as <code>&lt;br /&gt;</code>-tags.</td>
+        <td><a href="cebe-markdown-githubmarkdown.html">cebe\markdown\GithubMarkdown</a></td>
+    </tr>
+                <tr class="inherited" id="$html5">
+        <td><a href="cebe-markdown-markdown.html#$html5-detail">$html5</a></td>
+        <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+        <td>Whether to format markup according to HTML5 spec.</td>
+        <td><a href="cebe-markdown-markdown.html">cebe\markdown\Markdown</a></td>
+    </tr>
+                <tr class="inherited" id="$keepListStartNumber">
+        <td><a href="cebe-markdown-block-listtrait.html#$keepListStartNumber-detail">$keepListStartNumber</a></td>
+        <td>bool</td>
+        <td>Enable support <code>start</code> attribute of ordered lists.</td>
+        <td><a href="cebe-markdown-block-listtrait.html">cebe\markdown\block\ListTrait</a></td>
+    </tr>
+            <tr class="inherited" id="$maximumNestingLevel">
+        <td><a href="cebe-markdown-parser.html#$maximumNestingLevel-detail">$maximumNestingLevel</a></td>
+        <td><a href="http://www.php.net/language.types.integer">integer</a></td>
+        <td>The maximum nesting level for language elements.</td>
+        <td><a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td>
+    </tr>
+                <tr id="$renderer">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#$renderer-detail">$renderer</a></td>
+        <td><a href="yii-apidoc-renderers-baserenderer.html">yii\apidoc\renderers\BaseRenderer</a></td>
+        <td></td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+        </table>
+</div>
+
+<div class="summary doc-property">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="$context">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#$context-detail">$context</a></td>
+        <td></td>
+        <td></td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+                <tr class="inherited" id="$escapeCharacters">
+        <td><a href="cebe-markdown-markdown.html#$escapeCharacters-detail">$escapeCharacters</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>These are "escapeable" characters.</td>
+        <td><a href="cebe-markdown-markdown.html">cebe\markdown\Markdown</a></td>
+    </tr>
+                <tr class="inherited" id="$inlineHtmlElements">
+        <td><a href="cebe-markdown-block-htmltrait.html#$inlineHtmlElements-detail">$inlineHtmlElements</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>HTML elements considered as inline elements.</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+                    <tr class="inherited" id="$references">
+        <td><a href="cebe-markdown-inline-linktrait.html#$references-detail">$references</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>A list of defined references in this document.</td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+                <tr class="inherited" id="$selfClosingHtmlElements">
+        <td><a href="cebe-markdown-block-htmltrait.html#$selfClosingHtmlElements-detail">$selfClosingHtmlElements</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>HTML elements known to be self-closing.</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+    </table>
+</div>
+
+<a id="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+                                                                <tr id="highlight()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#highlight()-detail">highlight()</a></td>
+        <td></td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+                                                                <tr class="inherited" id="parse()">
+        <td><a href="cebe-markdown-parser.html#parse()-detail">parse()</a></td>
+        <td>Parses the given text considering the full language.</td>
+        <td><a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td>
+    </tr>
+                                                                <tr class="inherited" id="parseParagraph()">
+        <td><a href="cebe-markdown-parser.html#parseParagraph()-detail">parseParagraph()</a></td>
+        <td>Parses a paragraph without block elements (block elements are ignored).</td>
+        <td><a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td>
+    </tr>
+                        <tr id="prepare()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#prepare()-detail">prepare()</a></td>
+        <td></td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+            <tr id="process()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#process()-detail">process()</a></td>
+        <td>Converts markdown into HTML</td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+                                                                                    </table>
+</div>
+
+<div class="summary doc-method">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr class="inherited" id="blockTypes()">
+        <td><a href="cebe-markdown-parser.html#blockTypes()-detail">blockTypes()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td>
+    </tr>
+            <tr class="inherited" id="cleanup()">
+        <td><a href="cebe-markdown-parser.html#cleanup()-detail">cleanup()</a></td>
+        <td>This method will be called after <code>parse()</code> and <code>parseParagraph()</code>.</td>
+        <td><a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td>
+    </tr>
+            <tr class="inherited" id="consumeCode()">
+        <td><a href="cebe-markdown-block-codetrait.html#consumeCode()-detail">consumeCode()</a></td>
+        <td>Consume lines for a code block element</td>
+        <td><a href="cebe-markdown-block-codetrait.html">cebe\markdown\block\CodeTrait</a></td>
+    </tr>
+            <tr id="consumeFencedCode()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#consumeFencedCode()-detail">consumeFencedCode()</a></td>
+        <td>Consume lines for a fenced code block</td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+            <tr class="inherited" id="consumeHeadline()">
+        <td><a href="cebe-markdown-block-headlinetrait.html#consumeHeadline()-detail">consumeHeadline()</a></td>
+        <td>Consume lines for a headline</td>
+        <td><a href="cebe-markdown-block-headlinetrait.html">cebe\markdown\block\HeadlineTrait</a></td>
+    </tr>
+            <tr class="inherited" id="consumeHr()">
+        <td><a href="cebe-markdown-block-ruletrait.html#consumeHr()-detail">consumeHr()</a></td>
+        <td>Consume a horizontal rule</td>
+        <td><a href="cebe-markdown-block-ruletrait.html">cebe\markdown\block\RuleTrait</a></td>
+    </tr>
+            <tr class="inherited" id="consumeHtml()">
+        <td><a href="cebe-markdown-block-htmltrait.html#consumeHtml()-detail">consumeHtml()</a></td>
+        <td>Consume lines for an HTML block</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+            <tr class="inherited" id="consumeOl()">
+        <td><a href="cebe-markdown-block-listtrait.html#consumeOl()-detail">consumeOl()</a></td>
+        <td>Consume lines for an ordered list</td>
+        <td><a href="cebe-markdown-block-listtrait.html">cebe\markdown\block\ListTrait</a></td>
+    </tr>
+            <tr class="inherited" id="consumeParagraph()">
+        <td><a href="cebe-markdown-markdown.html#consumeParagraph()-detail">consumeParagraph()</a></td>
+        <td>Consume lines for a paragraph</td>
+        <td><a href="cebe-markdown-markdown.html">cebe\markdown\Markdown</a></td>
+    </tr>
+            <tr class="inherited" id="consumeQuote()">
+        <td><a href="cebe-markdown-block-quotetrait.html#consumeQuote()-detail">consumeQuote()</a></td>
+        <td>Consume lines for a blockquote element</td>
+        <td><a href="cebe-markdown-block-quotetrait.html">cebe\markdown\block\QuoteTrait</a></td>
+    </tr>
+            <tr class="inherited" id="consumeReference()">
+        <td><a href="cebe-markdown-inline-linktrait.html#consumeReference()-detail">consumeReference()</a></td>
+        <td>Consume link references</td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+            <tr class="inherited" id="consumeTable()">
+        <td><a href="cebe-markdown-block-tabletrait.html#consumeTable()-detail">consumeTable()</a></td>
+        <td>Consume lines for a table</td>
+        <td><a href="cebe-markdown-block-tabletrait.html">cebe\markdown\block\TableTrait</a></td>
+    </tr>
+            <tr class="inherited" id="consumeUl()">
+        <td><a href="cebe-markdown-block-listtrait.html#consumeUl()-detail">consumeUl()</a></td>
+        <td>Consume lines for an unordered list</td>
+        <td><a href="cebe-markdown-block-listtrait.html">cebe\markdown\block\ListTrait</a></td>
+    </tr>
+            <tr class="inherited" id="detectLineType()">
+        <td><a href="cebe-markdown-parser.html#detectLineType()-detail">detectLineType()</a></td>
+        <td>Given a set of lines and an index of a current line it uses the registed block types to
+detect the type of this line.</td>
+        <td><a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td>
+    </tr>
+                <tr class="inherited" id="identifyCode()">
+        <td><a href="cebe-markdown-block-codetrait.html#identifyCode()-detail">identifyCode()</a></td>
+        <td>Identify a line as the beginning of a code block.</td>
+        <td><a href="cebe-markdown-block-codetrait.html">cebe\markdown\block\CodeTrait</a></td>
+    </tr>
+            <tr class="inherited" id="identifyFencedCode()">
+        <td><a href="cebe-markdown-block-fencedcodetrait.html#identifyFencedCode()-detail">identifyFencedCode()</a></td>
+        <td>Identify a line as the beginning of a fenced code block.</td>
+        <td><a href="cebe-markdown-block-fencedcodetrait.html">cebe\markdown\block\FencedCodeTrait</a></td>
+    </tr>
+            <tr class="inherited" id="identifyHeadline()">
+        <td><a href="cebe-markdown-block-headlinetrait.html#identifyHeadline()-detail">identifyHeadline()</a></td>
+        <td>Identify a line as a headline</td>
+        <td><a href="cebe-markdown-block-headlinetrait.html">cebe\markdown\block\HeadlineTrait</a></td>
+    </tr>
+            <tr class="inherited" id="identifyHr()">
+        <td><a href="cebe-markdown-block-ruletrait.html#identifyHr()-detail">identifyHr()</a></td>
+        <td>Identify a line as a horizontal rule.</td>
+        <td><a href="cebe-markdown-block-ruletrait.html">cebe\markdown\block\RuleTrait</a></td>
+    </tr>
+            <tr class="inherited" id="identifyHtml()">
+        <td><a href="cebe-markdown-block-htmltrait.html#identifyHtml()-detail">identifyHtml()</a></td>
+        <td>Identify a line as the beginning of a HTML block.</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+            <tr id="identifyLine()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#identifyLine()-detail">identifyLine()</a></td>
+        <td></td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+            <tr class="inherited" id="identifyOl()">
+        <td><a href="cebe-markdown-block-listtrait.html#identifyOl()-detail">identifyOl()</a></td>
+        <td>Identify a line as the beginning of an ordered list.</td>
+        <td><a href="cebe-markdown-block-listtrait.html">cebe\markdown\block\ListTrait</a></td>
+    </tr>
+            <tr class="inherited" id="identifyQuote()">
+        <td><a href="cebe-markdown-block-quotetrait.html#identifyQuote()-detail">identifyQuote()</a></td>
+        <td>Identify a line as the beginning of a block quote.</td>
+        <td><a href="cebe-markdown-block-quotetrait.html">cebe\markdown\block\QuoteTrait</a></td>
+    </tr>
+            <tr class="inherited" id="identifyReference()">
+        <td><a href="cebe-markdown-inline-linktrait.html#identifyReference()-detail">identifyReference()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+            <tr class="inherited" id="identifyTable()">
+        <td><a href="cebe-markdown-block-tabletrait.html#identifyTable()-detail">identifyTable()</a></td>
+        <td>Identify a line as the beginning of a table block.</td>
+        <td><a href="cebe-markdown-block-tabletrait.html">cebe\markdown\block\TableTrait</a></td>
+    </tr>
+            <tr class="inherited" id="identifyUl()">
+        <td><a href="cebe-markdown-block-listtrait.html#identifyUl()-detail">identifyUl()</a></td>
+        <td>Identify a line as the beginning of an unordered list.</td>
+        <td><a href="cebe-markdown-block-listtrait.html">cebe\markdown\block\ListTrait</a></td>
+    </tr>
+            <tr id="inlineMarkers()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#inlineMarkers()-detail">inlineMarkers()</a></td>
+        <td></td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+            <tr class="inherited" id="lookupReference()">
+        <td><a href="cebe-markdown-inline-linktrait.html#lookupReference()-detail">lookupReference()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+                <tr id="parseApiLinks()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#parseApiLinks()-detail">parseApiLinks()</a></td>
+        <td></td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+            <tr class="inherited" id="parseBlocks()">
+        <td><a href="cebe-markdown-block-quotetrait.html#parseBlocks()-detail">parseBlocks()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-block-quotetrait.html">cebe\markdown\block\QuoteTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseEmphStrong()">
+        <td><a href="cebe-markdown-inline-emphstrongtrait.html#parseEmphStrong()-detail">parseEmphStrong()</a></td>
+        <td>Parses empathized and strong elements.</td>
+        <td><a href="cebe-markdown-inline-emphstrongtrait.html">cebe\markdown\inline\EmphStrongTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseEntity()">
+        <td><a href="cebe-markdown-block-htmltrait.html#parseEntity()-detail">parseEntity()</a></td>
+        <td>Parses an &amp; or a html entity definition.</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseEscape()">
+        <td><a href="cebe-markdown-parser.html#parseEscape()-detail">parseEscape()</a></td>
+        <td>Parses escaped special characters.</td>
+        <td><a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td>
+    </tr>
+            <tr class="inherited" id="parseGt()">
+        <td><a href="cebe-markdown-block-htmltrait.html#parseGt()-detail">parseGt()</a></td>
+        <td>Escapes <code>&gt;</code> characters.</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseImage()">
+        <td><a href="cebe-markdown-inline-linktrait.html#parseImage()-detail">parseImage()</a></td>
+        <td>Parses an image indicated by <code>![</code>.</td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseInline()">
+        <td><a href="cebe-markdown-block-headlinetrait.html#parseInline()-detail">parseInline()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-block-headlinetrait.html">cebe\markdown\block\HeadlineTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseInlineCode()">
+        <td><a href="cebe-markdown-inline-codetrait.html#parseInlineCode()-detail">parseInlineCode()</a></td>
+        <td>Parses an inline code span <code>`</code>.</td>
+        <td><a href="cebe-markdown-inline-codetrait.html">cebe\markdown\inline\CodeTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseInlineHtml()">
+        <td><a href="cebe-markdown-block-htmltrait.html#parseInlineHtml()-detail">parseInlineHtml()</a></td>
+        <td>Parses inline HTML.</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseLink()">
+        <td><a href="cebe-markdown-inline-linktrait.html#parseLink()-detail">parseLink()</a></td>
+        <td>Parses a link indicated by <code>[</code>.</td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseLinkOrImage()">
+        <td><a href="cebe-markdown-inline-linktrait.html#parseLinkOrImage()-detail">parseLinkOrImage()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseLt()">
+        <td><a href="cebe-markdown-inline-linktrait.html#parseLt()-detail">parseLt()</a></td>
+        <td>Parses inline HTML.</td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+                <tr class="inherited" id="parseStrike()">
+        <td><a href="cebe-markdown-inline-strikeouttrait.html#parseStrike()-detail">parseStrike()</a></td>
+        <td>Parses the strikethrough feature.</td>
+        <td><a href="cebe-markdown-inline-strikeouttrait.html">cebe\markdown\inline\StrikeoutTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseTd()">
+        <td><a href="cebe-markdown-block-tabletrait.html#parseTd()-detail">parseTd()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-block-tabletrait.html">cebe\markdown\block\TableTrait</a></td>
+    </tr>
+            <tr class="inherited" id="parseUrl()">
+        <td><a href="cebe-markdown-inline-urllinktrait.html#parseUrl()-detail">parseUrl()</a></td>
+        <td>Parses urls and adds auto linking feature.</td>
+        <td><a href="cebe-markdown-inline-urllinktrait.html">cebe\markdown\inline\UrlLinkTrait</a></td>
+    </tr>
+                    <tr class="inherited" id="renderAbsy()">
+        <td><a href="cebe-markdown-block-headlinetrait.html#renderAbsy()-detail">renderAbsy()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-block-headlinetrait.html">cebe\markdown\block\HeadlineTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderAutoUrl()">
+        <td><a href="cebe-markdown-inline-urllinktrait.html#renderAutoUrl()-detail">renderAutoUrl()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-urllinktrait.html">cebe\markdown\inline\UrlLinkTrait</a></td>
+    </tr>
+            <tr id="renderCode()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#renderCode()-detail">renderCode()</a></td>
+        <td>Renders a code block</td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+            <tr class="inherited" id="renderEmail()">
+        <td><a href="cebe-markdown-inline-linktrait.html#renderEmail()-detail">renderEmail()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderEmph()">
+        <td><a href="cebe-markdown-inline-emphstrongtrait.html#renderEmph()-detail">renderEmph()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-emphstrongtrait.html">cebe\markdown\inline\EmphStrongTrait</a></td>
+    </tr>
+            <tr id="renderHeadline()">
+        <td><a href="yii-apidoc-helpers-apimarkdown.html#renderHeadline()-detail">renderHeadline()</a></td>
+        <td>Renders a headline</td>
+        <td><a href="yii-apidoc-helpers-apimarkdown.html">yii\apidoc\helpers\ApiMarkdown</a></td>
+    </tr>
+            <tr class="inherited" id="renderHr()">
+        <td><a href="cebe-markdown-block-ruletrait.html#renderHr()-detail">renderHr()</a></td>
+        <td>Renders a horizontal rule</td>
+        <td><a href="cebe-markdown-block-ruletrait.html">cebe\markdown\block\RuleTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderHtml()">
+        <td><a href="cebe-markdown-block-htmltrait.html#renderHtml()-detail">renderHtml()</a></td>
+        <td>Renders an HTML block</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderImage()">
+        <td><a href="cebe-markdown-inline-linktrait.html#renderImage()-detail">renderImage()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderInlineCode()">
+        <td><a href="cebe-markdown-inline-codetrait.html#renderInlineCode()-detail">renderInlineCode()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-codetrait.html">cebe\markdown\inline\CodeTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderInlineHtml()">
+        <td><a href="cebe-markdown-block-htmltrait.html#renderInlineHtml()-detail">renderInlineHtml()</a></td>
+        <td>Renders a html entity.</td>
+        <td><a href="cebe-markdown-block-htmltrait.html">cebe\markdown\block\HtmlTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderLink()">
+        <td><a href="cebe-markdown-inline-linktrait.html#renderLink()-detail">renderLink()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderList()">
+        <td><a href="cebe-markdown-block-listtrait.html#renderList()-detail">renderList()</a></td>
+        <td>Renders a list</td>
+        <td><a href="cebe-markdown-block-listtrait.html">cebe\markdown\block\ListTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderParagraph()">
+        <td><a href="cebe-markdown-parser.html#renderParagraph()-detail">renderParagraph()</a></td>
+        <td>Render a paragraph block</td>
+        <td><a href="cebe-markdown-parser.html">cebe\markdown\Parser</a></td>
+    </tr>
+            <tr class="inherited" id="renderQuote()">
+        <td><a href="cebe-markdown-block-quotetrait.html#renderQuote()-detail">renderQuote()</a></td>
+        <td>Renders a blockquote</td>
+        <td><a href="cebe-markdown-block-quotetrait.html">cebe\markdown\block\QuoteTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderStrike()">
+        <td><a href="cebe-markdown-inline-strikeouttrait.html#renderStrike()-detail">renderStrike()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-strikeouttrait.html">cebe\markdown\inline\StrikeoutTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderStrong()">
+        <td><a href="cebe-markdown-inline-emphstrongtrait.html#renderStrong()-detail">renderStrong()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-emphstrongtrait.html">cebe\markdown\inline\EmphStrongTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderTable()">
+        <td><a href="cebe-markdown-block-tabletrait.html#renderTable()-detail">renderTable()</a></td>
+        <td>Render a table block</td>
+        <td><a href="cebe-markdown-block-tabletrait.html">cebe\markdown\block\TableTrait</a></td>
+    </tr>
+            <tr class="inherited" id="renderText()">
+        <td><a href="cebe-markdown-markdown.html#renderText()-detail">renderText()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-markdown.html">cebe\markdown\Markdown</a></td>
+    </tr>
+            <tr class="inherited" id="renderUrl()">
+        <td><a href="cebe-markdown-inline-linktrait.html#renderUrl()-detail">renderUrl()</a></td>
+        <td></td>
+        <td><a href="cebe-markdown-inline-linktrait.html">cebe\markdown\inline\LinkTrait</a></td>
+    </tr>
+    </table>
+</div>
+
+<a id="events"></a>
+
+<a id="constants"></a>
+
+<h2>Property Details</h2>
+
+<div class="property-doc">
+
+    <div class="detail-header h3" id="$context-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#$context-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L31" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L31" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $context        <span class="detail-header-tag small">
+            protected                                                property
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">protected</span> <span class="signature-type"></span> <a href="yii-apidoc-helpers-apimarkdown.html#$context-detail">$context</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+
+    <div class="detail-header h3" id="$renderer-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#$renderer-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L29" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L29" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $renderer        <span class="detail-header-tag small">
+            public            static                                    property
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        
+            </div>
+
+    <div class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="yii-apidoc-renderers-baserenderer.html">yii\apidoc\renderers\BaseRenderer</a></span> <a href="yii-apidoc-helpers-apimarkdown.html#$renderer-detail">$renderer</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+</div>
+<h2>Method Details</h2>
+
+<div class="method-doc">
+
+    <div class="detail-header h3" id="consumeFencedCode()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#consumeFencedCode()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L56" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L56" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        consumeFencedCode()
+        <span class="detail-header-tag small">
+            protected                                    method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Consume lines for a fenced code block</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">protected</span> <span class="signature-type">void</span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#consumeFencedCode()-detail">consumeFencedCode</a></strong> ( <span style="color: #0000BB">$lines</span>, <span style="color: #0000BB">$current</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$lines</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$current</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="highlight()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#highlight()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L99" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L99" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        highlight()
+        <span class="detail-header-tag small">
+            public                        static            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type">void</span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#highlight()-detail">highlight</a></strong> ( <span style="color: #0000BB">$code</span>, <span style="color: #0000BB">$language</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$code</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$language</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="identifyLine()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#identifyLine()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L44" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L44" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        identifyLine()
+        <span class="detail-header-tag small">
+            protected                                    method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">protected</span> <span class="signature-type">void</span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#identifyLine()-detail">identifyLine</a></strong> ( <span style="color: #0000BB">$lines</span>, <span style="color: #0000BB">$current</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$lines</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$current</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="inlineMarkers()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#inlineMarkers()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L121" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L121" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        inlineMarkers()
+        <span class="detail-header-tag small">
+            protected                                    method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">protected</span> <span class="signature-type">void</span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#inlineMarkers()-detail">inlineMarkers</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="parseApiLinks()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#parseApiLinks()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L128" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L128" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        parseApiLinks()
+        <span class="detail-header-tag small">
+            protected                                    method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">protected</span> <span class="signature-type">void</span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#parseApiLinks()-detail">parseApiLinks</a></strong> ( <span style="color: #0000BB">$text</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$text</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="prepare()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#prepare()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L33" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L33" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        prepare()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#prepare()-detail">prepare</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="process()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#process()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L239" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L239" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        process()
+        <span class="detail-header-tag small">
+            public                        static            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Converts markdown into HTML</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public static</span> <span class="signature-type"><a href="http://www.php.net/language.types.string">string</a></span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#process()-detail">process</a></strong> ( <span style="color: #0000BB">$content</span>, <span style="color: #0000BB">$context&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$paragraph&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$content</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$context</span></td>
+                  <td class="param-type-col"><a href="yii-apidoc-models-typedoc.html">yii\apidoc\models\TypeDoc</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$paragraph</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="renderCode()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#renderCode()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L88" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L88" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        renderCode()
+        <span class="detail-header-tag small">
+            protected                                    method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Renders a code block</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">protected</span> <span class="signature-type">void</span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#renderCode()-detail">renderCode</a></strong> ( <span style="color: #0000BB">$block</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$block</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="renderHeadline()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-apidoc-helpers-apimarkdown.html#renderHeadline()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2-apidoc/edit/master/helpers/ApiMarkdown.php#L221" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2-apidoc/blob/master/helpers/ApiMarkdown.php#L221" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        renderHeadline()
+        <span class="detail-header-tag small">
+            protected                                    method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Renders a headline</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">protected</span> <span class="signature-type">void</span> <strong><a href="yii-apidoc-helpers-apimarkdown.html#renderHeadline()-detail">renderHeadline</a></strong> ( <span style="color: #0000BB">$block</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$block</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+</div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+    /*
+     $(".sourceCode a.show").toggle(function () {
+     $(this).text($(this).text().replace(/show/,'hide'));
+     $(this).parents(".sourceCode").find("div.code").show();
+     },function () {
+     $(this).text($(this).text().replace(/hide/,'show'));
+     $(this).parents(".sourceCode").find("div.code").hide();
+     });
+     $("a.sourceLink").click(function () {
+     $(this).attr('target','_blank');
+     });
+     */
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Tue, 09 Aug 2016 06:16:05 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/9e9499b6/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/1374a5fc/solarized_light.css" rel="stylesheet">
+<link href="./assets/1fb4caa7/style.css" rel="stylesheet">
+<script src="./assets/9568987e/jquery.js"></script>
+<script src="./assets/9e9499b6/js/bootstrap.js"></script>
+<script src="./assets/6746678/jssearch.js"></script>    <title>The Definitive Guide to Yii 2.0</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w585" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w585-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">The Definitive Guide to Yii 2.0</a></div><div id="w585-collapse" class="collapse navbar-collapse"><ul id="w586" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <b class="caret"></b></a><ul id="w587" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-codeception-index.html" tabindex="-1">codeception</a></li>
+<li><a href="./ext-composer-index.html" tabindex="-1">composer</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li></ul></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-567" data-toggle="collapse" data-parent="#navigation">What is this? &lt;a name=&quot;what&quot;&gt;&lt;/a&gt; <b class="caret"></b></a><div id="navigation-567" class="submenu panel-collapse collapse"><a class="list-group-item" href="http://markdown.cebe.cc/try?flavor=default">try it!</a>
+<a class="list-group-item" href="http://markdown.cebe.cc/try?flavor=gfm">try it!</a>
+<a class="list-group-item" href="./guide-.html">#25</a>
+<a class="list-group-item" href="http://markdown.cebe.cc/try?flavor=extra">try it!</a>
+<a class="list-group-item" href="https://github.com/cebe/markdown/issues/new">suggest</a></div>
+<a class="list-group-item" href="#navigation-568" data-toggle="collapse" data-parent="#navigation">Who is using it? <b class="caret"></b></a><div id="navigation-568" class="submenu panel-collapse collapse"><a class="list-group-item" href="http://www.yiiframework.com/doc-2.0/">API-docs and the definitive guide</a>
+<a class="list-group-item" href="./guide-.html">Yii Framework</a>
+<a class="list-group-item" href="https://github.com/yiisoft/yii2">2.0</a></div>
+<a class="list-group-item" href="#navigation-569" data-toggle="collapse" data-parent="#navigation">Installation &lt;a name=&quot;installation&quot;&gt;&lt;/a&gt; <b class="caret"></b></a><div id="navigation-569" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-570" data-toggle="collapse" data-parent="#navigation">Usage &lt;a name=&quot;usage&quot;&gt;&lt;/a&gt; <b class="caret"></b></a><div id="navigation-570" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-571" data-toggle="collapse" data-parent="#navigation">In your PHP project <b class="caret"></b></a><div id="navigation-571" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-572" data-toggle="collapse" data-parent="#navigation">The command line script <b class="caret"></b></a><div id="navigation-572" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-573" data-toggle="collapse" data-parent="#navigation">Extensions <b class="caret"></b></a><div id="navigation-573" class="submenu panel-collapse collapse"><a class="list-group-item" href="https://github.com/Bogardo/markdown-codepen">Bogardo/markdown-codepen</a>
+<a class="list-group-item" href="https://github.com/kartik-v/yii2-markdown">kartik-v/yii2-markdown</a>
+<a class="list-group-item" href="https://github.com/cebe/markdown-latex">cebe/markdown-latex</a>
+<a class="list-group-item" href="https://github.com/cebe/markdown/edit/master/README.md#L98">add yours!</a></div>
+<a class="list-group-item" href="#navigation-574" data-toggle="collapse" data-parent="#navigation">Extending the language &lt;a name=&quot;extend&quot;&gt;&lt;/a&gt; <b class="caret"></b></a><div id="navigation-574" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-575" data-toggle="collapse" data-parent="#navigation">Adding block elements <b class="caret"></b></a><div id="navigation-575" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-576" data-toggle="collapse" data-parent="#navigation">Adding inline elements <b class="caret"></b></a><div id="navigation-576" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-577" data-toggle="collapse" data-parent="#navigation">Composing your own Markdown flavor <b class="caret"></b></a><div id="navigation-577" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-578" data-toggle="collapse" data-parent="#navigation">Acknowledgements &lt;a name=&quot;ack&quot;&gt;&lt;/a&gt; <b class="caret"></b></a><div id="navigation-578" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-579" data-toggle="collapse" data-parent="#navigation">FAQ &lt;a name=&quot;faq&quot;&gt;&lt;/a&gt; <b class="caret"></b></a><div id="navigation-579" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-580" data-toggle="collapse" data-parent="#navigation">Why another markdown parser? <b class="caret"></b></a><div id="navigation-580" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-581" data-toggle="collapse" data-parent="#navigation">Where do I report bugs or rendering issues? <b class="caret"></b></a><div id="navigation-581" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-582" data-toggle="collapse" data-parent="#navigation">How can I contribute to this library? <b class="caret"></b></a><div id="navigation-582" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-583" data-toggle="collapse" data-parent="#navigation">Am I free to use this? <b class="caret"></b></a><div id="navigation-583" class="submenu panel-collapse collapse"></div>
+<a class="list-group-item" href="#navigation-584" data-toggle="collapse" data-parent="#navigation">Contact <b class="caret"></b></a><div id="navigation-584" class="submenu panel-collapse collapse"></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <blockquote><p>test test
+test</p>
+</blockquote>
+<blockquote><p>test
+test
+test</p>
+</blockquote>
+<p>test</p>
+<p>&gt;this is not a quote</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Tue, 09 Aug 2016 07:17:26 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

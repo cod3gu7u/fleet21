@@ -1,0 +1,19 @@
+.box {
+    margin-top: 20px !important;
+    padding: 20px;
+}
+
+.modal-lg .modal-content {
+	border-top-color: #26A600 !important;
+	padding: 10px;
+}
+
+.site-index {
+	margin-top: 0px !important;
+}
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

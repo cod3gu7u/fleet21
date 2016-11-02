@@ -3,15 +3,18 @@ Fleet-21 - Auto Dealer System
 
 FEATURES
 --------
-Customer Management
-Vehicle (Stock)
-Sales
-Quotation
-Payment Voucher
-Purchase Order 
-Cashbook
-Reporting
-Dashboard
+
+* Customer Management
+* Vehicle (Stock)
+* Sales
+* Quotation
+* Payment Voucher
+* Purchase Order 
+* Cashbook
+* Reporting
+* Dashboard
+* Admin
+* Link to e-store
 
 
 REQUIREMENTS AND INSTALLATION
